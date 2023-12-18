@@ -9,8 +9,10 @@ import {
   Revenue,
 } from './definitions';
 import { formatCurrency } from './utils';
-import { unstable_cache as noStore } from 'next/cache';
 
+function noStore() {
+  console.log('noStore function called');
+}
 export async function fetchRevenue() {
   noStore();
   // Add noStore() here prevent the response from being cached.
