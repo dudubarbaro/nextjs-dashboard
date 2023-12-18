@@ -9,7 +9,7 @@ import {
   Revenue,
 } from './definitions';
 import { formatCurrency } from './utils';
-import { unstable_cache as noStore } from 'next/cache';
+// import { unstable_cache as noStore } from 'next/cache';
 
 function noStore() {
   console.log('noStore function called');
